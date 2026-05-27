@@ -246,7 +246,7 @@ ui <- fluidPage(
                  br(),
                  h4(icon("github"), " Repositório do Projeto (GitHub)"),
                  hr(),
-                 tags$a(href = "https://github.com/miltongalvino/SoyRisk-Predictor---Goi-s.git", target = "_blank", style = "font-size: 18px; font-weight: bold; color: #2E7D32;", "github.com/miltongalvino")
+                 tags$a(href = "https://github.com/miltongalvino/SoyRisk-Predictor---Goias", target = "_blank", style = "font-size: 18px; font-weight: bold; color: #2E7D32;", "github.com/miltongalvino")
         )
       )
     )
