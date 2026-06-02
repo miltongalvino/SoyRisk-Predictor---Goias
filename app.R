@@ -447,7 +447,7 @@ server <- function(input, output, session) {
         <p><b>Município Enquadrado:</b> %s, GO | <b>Variedade:</b> GMR %s (%s dias sob risco)</p>
         <p><b>Janela Alvo de Monitoramento:</b> %s até %s</p>
         <div class='risco-box' style='background-color: %s;'>
-          Risco de Perda: %s (Severidade Real Medida: %s%%)
+          Risco de Perda: %s (Severidade estimada: %s%%)
         </div>",
       res$Municipio, res$GMR, res$Dias_Exposicao, format(res$Data_R1, "%d/%m/%Y"), format(res$Data_Fim, "%d/%m/%Y"),
       cor_risco, res$Nivel_de_Risco_Biologico, res$Severidade_Ferrugem_Predita
