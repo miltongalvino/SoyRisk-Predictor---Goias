@@ -373,7 +373,7 @@ server <- function(input, output, session) {
     df <- dados_risco()
     
     df_vertical <- tibble(
-      `Parâmetro / Métrica` = c("Município Alvo", "Grau de Maturação Relativa (GMR)", "Nível de Cobertura Contratual", "Data de Plantio", "Data de R1 (Início de Risco)", "Dias Sob Risco (Exposição)", "Término da Janela Crítica", "Chuva Acumulada (30d)", "Dias Chuvosos (30d)", "Severidade Predita da Ferrugem", "Perda Física Estimada por Hectare", "Produtividade Real Projetada", "Status de Sinistro Atuarial", "Indemnização Estimada Total"),
+      `Parâmetro / Métrica` = c("Município Alvo", "Grau de Maturação Relativa (GMR)", "Nível de Cobertura Contratual", "Data de Plantio", "Data de R1 (Início de Risco)", "Dias Sob Risco (Exposição)", "Término da Janela Crítica", "Chuva Acumulada (30d)", "Dias Chuvosos (30d)", "Severidade Predita da Ferrugem", "Perda Física Estimada por Hectare", "Produtividade Real Projetada", "Status de Sinistro Atuarial", "Indenização Estimada Total"),
       `Valor Estimado` = c(df$Municipio, as.character(df$GMR), paste0(df$Cobertura_Pct, "%"), format(df$Data_Plantio, "%d/%m/%Y"), format(df$Data_R1, "%d/%m/%Y"), paste(df$Dias_Exposicao, "dias"), format(df$Data_Fim, "%d/%m/%Y"), paste(df$Chuva_Acumulada_30d_mm, "mm"), paste(df$Dias_Chuvosos_30d, "dias"), paste0(df$Severidade_Ferrugem_Predita, "%"), paste(format(df$Perda_Estimada_kg_ha, big.mark = ".", decimal.mark = ","), "kg/ha"), paste(format(df$Prod_Real_Est_kg_ha, big.mark = ".", decimal.mark = ","), "kg/ha"), df$Status_Seguro, paste("R$", format(df$Indenizacao_Total_Estimada_BRL, big.mark = ".", decimal.mark = ","))),
       `Metodologia de Cálculo` = c("Geocodificação IBGE", "Características da Cultivar", "Garantia PROAGRO/PSR", "Data de Semeadura", "Data de Plantio + 50 dias", "35 dias + ((GMR - 6.0) x 16)", "Data de R1 + Dias de Exposição ao Risco", "Soma pluviométrica (NASA)", "Contagem de dias c/ chuva > 0mm", "-3.8983 + (0.3777 x Chuva_mm) - (0.0003 x Chuva_mm²)", "Severidade % x Coeficiente de Dano (21.41)", "Produtividade Base Esperada (3600 kg/ha) - Perda Física", "Se Prod. Real < (Prod. Base x Cobertura %)", "(Prod. Garantida - Prod. Real) x Área x Preço / 60"),
       `Fonte Bibliográfica` = c("Pacote geobr / IBGE", "Critério do Produtor", "Apólice / Seguradora", "Vazio Sanitário (Agrodefesa)", "Fehr & Caviness (1977)", "EMBRAPA Soja (Sist. de Produção)", "UFG / Pesq. Agrop. Trop.", "API NASA POWER", "API NASA POWER", "Modelo BR3 (Del Ponte et al., 2006)", "Dalla Lana et al. (2015)", "Cálculo Interno", "Regras SUSEP / MAPA", "Regras SUSEP / MAPA")
@@ -381,7 +381,7 @@ server <- function(input, output, session) {
     
     if (input$modo_analise == "bio") {
       df_vertical <- df_vertical %>%
-        filter(!(`Parâmetro / Métrica` %in% c("Nível de Cobertura Contratual", "Produtividade Real Projetada", "Status de Sinistro Atuarial", "Indemnização Estimada Total")))
+        filter(!(`Parâmetro / Métrica` %in% c("Nível de Cobertura Contratual", "Produtividade Real Projetada", "Status de Sinistro Atuarial", "Indenização Estimada Total")))
     }
     
     return(df_vertical)
