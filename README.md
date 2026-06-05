@@ -1,5 +1,5 @@
 
-# # 🌾 SoyRisk Predictor - Goiás
+# #  SoyRisk Predictor - Goiás
 
 ### *Inteligência Atuarial e Fitossanitária Avançada para a Cultura da Soja*
 
@@ -7,7 +7,7 @@ O **SoyRisk Predictor** é uma aplicação web interativa desenvolvida em **R (S
 
 ---
 
-## 🚀 Funcionalidades Principais
+##  Funcionalidades Principais
 
 * **Ingestão de Dados em Tempo Real:** Conexão automatizada com a API **NASA POWER** para coleta de dados pluviométricos diários com base nas coordenadas geográficas do município selecionado.
 * **Análise Fenológica Personalizada:** Ajuste dinâmico do período de exposição ao risco a partir do Grau de Maturação Relativa (GMR) da cultivar utilizada.
@@ -18,7 +18,7 @@ O **SoyRisk Predictor** é uma aplicação web interativa desenvolvida em **R (S
 
 ---
 
-## 🛠️ Tecnologias e Dependências
+##  Tecnologias e Dependências
 
 O projeto foi construído utilizando o ecossistema R, dependendo dos seguintes pacotes:
 
@@ -34,7 +34,7 @@ O projeto foi construído utilizando o ecossistema R, dependendo dos seguintes p
 
 ---
 
-## 🧮 Fundamentação Teórica e Algoritmos
+##  Fundamentação Teórica e Algoritmos
 
 ### 1. Janela de Exposição Crítica
 
@@ -48,11 +48,11 @@ A severidade da doença é estimada encontrando a janela móvel de 30 dias mais 
 
 $$\text{Severidade (\%)} = -3.8983 + (0.3777 \times x) - (0.0003 \times x^2)$$
 
-> ℹ️ *Onde $x$ representa a chuva acumulada da janela crítica limitada a $600\text{ mm}$. A perda de produtividade física é calculada com base no coeficiente de dano médio de $21.41\text{ kg/ha}$ para cada $1\%$ de severidade (Dalla Lana et al., 2015).*
+>  *Onde $x$ representa a chuva acumulada da janela crítica limitada a $600\text{ mm}$. A perda de produtividade física é calculada com base no coeficiente de dano médio de $21.41\text{ kg/ha}$ para cada $1\%$ de severidade (Dalla Lana et al., 2015).*
 
 ---
 
-## 💻 Como Executar o Projeto
+##  Como Executar o Projeto
 
 ### Pré-requisitos
 
@@ -86,7 +86,7 @@ shiny::runApp()
 
 ---
 
-## 📚 Referências Científicas Utilizadas
+##  Referências Científicas Utilizadas
 
 * **Beruski, G. C., Del Ponte, E. M., et al. (2020).** Performance and profitability of rain-based thresholds for timing fungicide applications in soybean rust control. *Plant Disease*, 104(10), 2704-2712.
 * **Del Ponte, E. M., Godoy, C. V., Li, X., & Yang, X. B. (2006).** Predicting severity of Asian soybean rust epidemics with empirical rainfall models. *Phytopathology*, 96(7), 797-803.
@@ -96,14 +96,14 @@ shiny::runApp()
 
 ---
 
-## 👥 Equipe de Desenvolvimento (UFV)
+##  Equipe de Desenvolvimento (UFV)
 
 Este projeto foi desenvolvido por engenheiros agrônomos e pesquisadores vinculados aos programas de pós-graduação da **Universidade Federal de Viçosa (UFV)**:
 
-* **Enzo Agustin Pedraza** – Universidad Nacional de Tucumán (ARG). Integrante do Laboratório de Epidemiologia da UFV. [[LinkedIn](https://www.linkedin.com/in/enzo-agustin-pedraza-6ab8b734a/)]
+* **Enzo Agustin Pedraza** – Universidade Federal de Viçosa (BR). Integrante do Laboratório de Epidemiologia da UFV. [[LinkedIn](https://www.linkedin.com/in/enzo-agustin-pedraza-6ab8b734a/)]
 * **Gabriel José Degaspari** – Universidade Federal de Viçosa (BR). Integrante do Laboratório de Nematologia da UFV. [[LinkedIn](https://www.linkedin.com/in/gabriel-jos%C3%A9-degaspari-2720a5263/)]
-* **Laura Gomez Agudelo** – Politécnico Colombiano 'Jaime Isaza Cadavid' (COL). Integra o Laboratório de Controle Biológico de Nematoides da UFV. [[LinkedIn](https://www.linkedin.com/in/laura-gomez-ag27/)]
-* **Milton Epitácio Carneiro Monte Galvino** – Universidade Federal do Ceará (BR). Atua no Laboratório de Biologia de Populações de Fitopatógenos da UFV. [[LinkedIn](https://www.linkedin.com/in/milton-monte-galvino-345674155/)]
+* **Laura Gomez Agudelo** – Universidade Federal de Viçosa (BR). Integra o Laboratório de Controle Biológico de Nematoides da UFV. [[LinkedIn](https://www.linkedin.com/in/laura-gomez-ag27/)]
+* **Milton Epitácio Carneiro Monte Galvino** – Universidade Federal de Viçosa (BR). Atua no Laboratório de Biologia de Populações de Fitopatógenos da UFV. [[LinkedIn](https://www.linkedin.com/in/milton-monte-galvino-345674155/)]
 
 ---
 
