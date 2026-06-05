@@ -108,4 +108,5 @@ Este projeto foi desenvolvido por engenheiros agrônomos e pesquisadores vincula
 ---
 
 🔗 **Repositório Oficial:** [github.com/miltongalvino/SoyRisk-Predictor---Goias](https://github.com/miltongalvino/SoyRisk-Predictor---Goias)
+
 🔗 **Site do app**: https://miltongalvino.shinyapps.io/soyriskpredictor/
