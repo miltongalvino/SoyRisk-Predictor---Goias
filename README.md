@@ -48,7 +48,7 @@ A severidade da doença é estimada encontrando a janela móvel de 30 dias mais 
 
 $$\text{Severidade (\%)} = -3.8983 + (0.3777 \times x) - (0.0003 \times x^2)$$
 
->  *Onde $x$ representa a chuva acumulada da janela crítica limitada a $600\text{ mm}$. A perda de produtividade física é calculada com base no coeficiente de dano médio de $21.41\text{ kg/ha}$ para cada $1\%$ de severidade (Dalla Lana et al., 2015).*
+>  *Onde x representa a chuva acumulada da janela crítica limitada a 600 mm. A perda de produtividade física é calculada com base no coeficiente de dano médio de 21.41 kg/ha para cada 1% de severidade (Dalla Lana et al., 2015).*
 
 ---
 
